@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "4devs Tools",
+    "version": "1.0",
+    "description": "Esta extensão renderiza as ferramentas do site 4devs.com.br. Ela é ideal para desenvolvedores e testers.",
+    "author": "NatanR-dev",
+    "permissions": [
+      "activeTab",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+    ],
+    "browser_action": {
+      "default_title": "Renderizar 4devs",
+      "default_popup": "popup.html",
+      "default_icon": "assets/img/favicon-16x16.png"
+    },
+    "icons": {
+      "16": "assets/img/favicon-16x16.png",
+      "32": "assets/img/favicon-32x32.png",
+      "180": "assets/img/favicon-180x180.png"
+    },
+    "background": {
+      "scripts": ["assets/js/background.js"],
+      "persistent": true
+    }
+  }
